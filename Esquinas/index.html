@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="all" href="style.css" />
+    <title>Esquinas</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            background-color: rgb(44, 49, 40); 
+        }
+        .usarFlexbox {
+            background-color: rgb(232, 236, 232); 
+            background: #4e54c8;  
+            background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+            width: 100vw; height:100vh; 
+            border: 1px solid black;
+            /*FLEX*/
+            display: flex; 
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            align-content: space-between;
+        }
+        .usarFlexbox div {
+            background-color: rgb(255, 255, 255);
+            width: 3vw;
+            height: 3vw;
+            margin: 0.5vw;
+        }
+        #Espacio{
+            width: 100vw;
+            background-color: rgb(232, 236, 232);
+            opacity: 0;
+        }
+        /*ANIMACIÓN*/
+@keyframes myanimation {
+  0%   {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg)
+  }
+  25%  {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  50%  {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg)
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg)
+  }
+}
+
+#anim {
+  animation-name: myanimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+    </style>
+</head>
+<body>
+    <div class="usarFlexbox">
+        <div id ="anim">
+            
+        </div>
+        <div id ="anim">
+            
+        </div>
+        <div id="Espacio">
+            
+        </div>
+        <div id ="anim">
+            
+        </div>
+        <div id ="anim">
+            
+        </div>
+    </div>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+</div >
+</body>
+</html>

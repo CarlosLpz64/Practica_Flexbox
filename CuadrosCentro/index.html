@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="all" href="style.css" />
+    <title>Cuadros centrales</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            background-color: rgb(44, 49, 40); 
+        }
+        .Flexbox1 {
+            background: #4e54c8;  
+            background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+            width: 100vw; height:100vh; 
+            border: 1px solid black;
+            /*FLEX*/
+            display: flex; 
+            flex-direction: row;
+            justify-content: center;
+        }
+        .Flexbox2{
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+        }
+        .Flexbox2 div {
+            background-color: rgb(255, 255, 255);
+            width: 10vw;
+            height: 10vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="Flexbox1">
+        <div class = "Flexbox2">
+            <div style="background-color: rgb(255, 0, 0);"> </div>
+            <div style="background-color: rgb(72, 255, 0);"> </div>
+        </div>
+        <div class = "Flexbox2">
+            <div style="background-color: rgb(0, 174, 255);"> </div>
+            <div style="background-color: rgb(174, 0, 255);"> </div>
+        </div>
+    </div>
+</body>
+</html>
